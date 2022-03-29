@@ -4,7 +4,8 @@
   </a>
 </p>
 
-Project was created base on Metaplex
+Project was created base on Metaplex.
+For using web-site, you need must have Phantom wallet
 
 ## Installing
 
