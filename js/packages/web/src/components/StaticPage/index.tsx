@@ -203,7 +203,7 @@ export const StaticPage = (props: {
       />
       <p className="author-name">{props.leftContent?.author.name}</p>
       <div className="author-details">
-        <p className="author-subtitle">Details</p>
+        <p className="author-subtitle">Детали</p>
         <p>{props.leftContent?.author.details}</p>
       </div>
       <div className="author-stats">
@@ -213,7 +213,7 @@ export const StaticPage = (props: {
         ))}
       </div>
       <div className="author-connect">
-        <p className="author-subtitle">Connect with the artist</p>
+        <p className="author-subtitle">Подключиться с артистом</p>
         {props.leftContent?.author.connectWith?.map((e, ii) => (
           <p key={ii}>
             <a href={e.url}>{e.label}</a>
@@ -262,7 +262,7 @@ export const StaticPage = (props: {
   const rightSection = <section id="right-container"></section>;
   const finalSection = (
     <section id="bottom-container">
-      <p className="bottom-title">Shop the Collection</p>
+      <p className="bottom-title">Магазин для коллекции</p>
       {liveAuctionsView}
     </section>
   );

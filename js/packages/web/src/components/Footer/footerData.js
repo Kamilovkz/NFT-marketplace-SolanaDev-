@@ -2,44 +2,44 @@ export const footerConf = {
   showShopName: true,
   showEmailSubscriber: true,
   emailSubscriberText:
-    'Join our mailing list for updates about our artists and more.',
+    'Присоеденяйтесь для более подробной информации о продуктах.',
   components: [
     {
-      title: 'Company',
+      title: 'Компания',
       links: [
         {
-          label: 'About',
+          label: 'О нас',
           url: 'www.solana.com',
         },
         {
-          label: 'Terms of service',
+          label: 'Правила пользования',
           url: 'www.solana.com',
         },
       ],
     },
     {
-      title: 'Help',
+      title: 'Поддержка',
       links: [
         {
           label: 'FAQ',
           url: 'www.solana.com',
         },
         {
-          label: 'Support',
+          label: 'Помощь',
           url: 'www.solana.com',
         },
         {
-          label: 'Privacy policy',
+          label: 'Политика',
           url: 'www.solana.com',
         },
         {
-          label: 'Your purchases',
+          label: 'Ваши покупки',
           url: 'www.solana.com',
         },
       ],
     },
     {
-      title: 'Follow us',
+      title: 'Узнать больше',
       links: [
         {
           label: 'Instagram',

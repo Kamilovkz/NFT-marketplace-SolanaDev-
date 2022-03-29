@@ -109,7 +109,7 @@ export default function TokenDialog({
             fontWeight: 600,
           }}
         >
-          Select a token as your auction mint
+          Выберите токен для минтинга
         </Typography>
         <Input
           autoFocus
@@ -153,7 +153,7 @@ export default function TokenDialog({
           key={TokenViewState.Main}
           className={'token-tab'}
           /*  classes={{ selected: 'tab-selected' }} */
-          tab={<span className="tab-title">Main</span>}
+          tab={<span className="tab-title">Главная</span>}
         />
         <TabPane
           key={TokenViewState.Wormhole}

@@ -196,9 +196,7 @@ export const ArtMinting = ({ id, onMint }: ArtMintingProps) => {
                 flexDirection: 'column',
                 paddingTop: 30,
               }}
-              label={
-                <h3 style={{ color: 'white' }}>Number of editions to mint</h3>
-              }
+              label={<h3 style={{ color: 'white' }}>Количество для минта</h3>}
               labelAlign="left"
               colon={false}
             >
@@ -220,7 +218,7 @@ export const ArtMinting = ({ id, onMint }: ArtMintingProps) => {
                 paddingTop: 30,
               }}
               label={
-                <h3 style={{ color: 'white' }}>Edition Number (Optional)</h3>
+                <h3 style={{ color: 'white' }}>Номер издания (Опционально)</h3>
               }
               labelAlign="left"
               colon={false}
@@ -257,7 +255,7 @@ export const ArtMinting = ({ id, onMint }: ArtMintingProps) => {
                 fontSize: '2rem',
               }}
             >
-              New editions have been minted please view your NFTs in{' '}
+              Были отчеканены новые выпуски, пожалуйста, просмотрите ваши НФТ в{' '}
               <Link to="/artworks">My Items</Link>.
             </p>
             <Button
@@ -267,7 +265,7 @@ export const ArtMinting = ({ id, onMint }: ArtMintingProps) => {
               }}
               className="overlay-btn"
             >
-              Got it
+              Готово!
             </Button>
           </MetaplexOverlay>
         </div>

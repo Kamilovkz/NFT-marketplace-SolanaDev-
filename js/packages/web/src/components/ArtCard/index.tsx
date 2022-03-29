@@ -117,7 +117,7 @@ export const ArtCard = (props: ArtCardProps) => {
             )} */}
 
             {count && (
-              <div className="edition-badge">Selected count: {count}</div>
+              <div className="edition-badge">Выбранное количество: {count}</div>
             )}
           </>
         }

@@ -106,15 +106,15 @@ const AddFundsModal = (props: {
     <MetaplexModal
       visible={props.showAddFundsModal}
       onCancel={() => props.setShowAddFundsModal(false)}
-      title="Add Funds"
+      title="Добавить монеты"
       bodyStyle={{
         alignItems: 'start',
       }}
     >
       <div style={{ maxWidth: '100%' }}>
         <p style={{ color: 'white' }}>
-          We partner with <b>FTX</b> to make it simple to start purchasing
-          digital collectibles.
+          Мы партнеры с <b>MetageCity</b>для улучшения покупок в сфере
+          блокчейна.
         </p>
         <div
           style={{
@@ -130,7 +130,7 @@ const AddFundsModal = (props: {
             fontWeight: 700,
           }}
         >
-          <span style={{ color: 'rgba(255, 255, 255, 0.5)' }}>Balance</span>
+          <span style={{ color: 'rgba(255, 255, 255, 0.5)' }}>Баланс</span>
           <span>
             {formatNumber.format(props.balance)}&nbsp;&nbsp;
             <span
@@ -147,10 +147,7 @@ const AddFundsModal = (props: {
             SOL
           </span>
         </div>
-        <p>
-          If you have not used FTX Pay before, it may take a few moments to get
-          set up.
-        </p>
+        <p>Если вы раньше не работали с NFT это может занять время.</p>
         <Button
           onClick={() => props.setShowAddFundsModal(false)}
           style={{
@@ -191,7 +188,7 @@ const AddFundsModal = (props: {
               fontSize: 16,
             }}
           >
-            <span style={{ marginRight: 5 }}>Sign with</span>
+            <span style={{ marginRight: 5 }}>Зарегистрироваться</span>
             <img src="/ftxpay.png" width="80" />
           </div>
         </Button>
@@ -474,7 +471,7 @@ export const CurrentUserBadgeMobile = (props: {
         )}
       </div>
       <div className="balance-container">
-        <span className="balance-title">Balance</span>
+        <span className="balance-title">Баланс</span>
         <span>
           <span className="sol-img-wrapper">
             <img src="/sol.svg" width="10" />

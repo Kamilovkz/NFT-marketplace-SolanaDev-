@@ -15,23 +15,23 @@ export const HowToBuyModal: React.FC<HowToBuyModalProps> = ({
   return (
     <InstructionsModal
       buttonClassName={buttonClassName}
-      buttonText="How to Buy"
-      modalTitle={`Buying NFTs on ${LABELS.STORE_NAME}`}
+      buttonText="Как купить"
+      modalTitle={`Покупка NFT на ${LABELS.STORE_NAME}`}
       cardProps={[
         {
-          title: 'Create a SOL wallet',
+          title: 'Создать кошелек SOL',
           imgSrc: '/modals/how-to-buy-1.svg',
-          description: `SOL is the cryptocurrency we use for purchases on ${LABELS.STORE_NAME}. To keep your SOL safe, you’ll need a crypto wallet—we recommend using one called Phantom. Just head to Phantom’s site, install the Chrome extension, and create an account.`,
+          description: `SOL криптовалюта использующая для покупки в ${LABELS.STORE_NAME}. Чтобы сохранить SOL в безопасности, вам понадобится криптокошелек - мы рекомендуем использовать кошелек Phantom. Просто зайдите на сайт Phantom, установите расширение для Chrome и создайте учетную запись..`,
         },
         {
-          title: 'Add funds to your wallet',
+          title: 'Добавить средства в свой кошелек',
           imgSrc: '/modals/how-to-buy-2.svg',
-          description: `To fund your wallet, you’ll need to purchase SOL tokens. The easiest way is with a credit card on FTX Pay—a service that’s already part of your new Phantom wallet. Open your wallet, tap “Deposit SOL”, and select “Deposit from FTX”. A new window will open where you can create an FTX account and purchase SOL.`,
+          description: `Чтобы пополнить свой кошелек, вам нужно будет приобрести токены SOL. Проще всего это сделать с помощью кредитной карты на FTX Pay - сервис, который уже является частью вашего нового кошелька Phantom. Откройте свой кошелек, нажмите "Пополнить SOL" и выберите "Пополнить с FTX". Откроется новое окно, где вы сможете создать учетную запись FTX и приобрести SOL.`,
         },
         {
-          title: `Connect your wallet to ${LABELS.STORE_NAME}.`,
+          title: `Подключите свой кошелек к ${LABELS.STORE_NAME}.`,
           imgSrc: '/modals/how-to-buy-3.jpg',
-          description: `To connect your wallet, tap “Connect Wallet” here on the site. Select the Phantom option, and your wallet will connect. After that, you can start bidding on NFTs.`,
+          description: `Чтобы подключить кошелек, нажмите "Подключить кошелек" здесь на сайте. Выберите опцию Phantom, и ваш кошелек будет подключен. После этого вы можете начать участвовать в торгах на НФТ.`,
           endElement: <ConnectButton className={'secondary-btn'} />,
         },
       ]}

@@ -120,27 +120,27 @@ const Countdown = ({ state }: { state?: CountdownState }) => {
         <Col>
           <div className="cd-number">
             {localState.days}
-            <span style={{ opacity: 0.5 }}>days</span>
+            <span style={{ opacity: 0.5 }}>дни</span>
           </div>
         </Col>
       )}
       <Col>
         <div className="cd-number">
           {localState.hours}
-          <span style={{ opacity: 0.5 }}>hours</span>
+          <span style={{ opacity: 0.5 }}>часы</span>
         </div>
       </Col>
       <Col>
         <div className="cd-number">
           {localState.minutes}
-          <span style={{ opacity: 0.5 }}>min</span>
+          <span style={{ opacity: 0.5 }}>минуты</span>
         </div>
       </Col>
       {!localState.days && (
         <Col>
           <div className="cd-number">
             {localState.seconds}
-            <span style={{ opacity: 0.5 }}>sec</span>
+            <span style={{ opacity: 0.5 }}>секунды</span>
           </div>
         </Col>
       )}
@@ -165,7 +165,7 @@ const LabeledCountdown = ({ state }: { state?: CountdownState }) => {
           {state &&
             (isEnded(state) ? (
               <Row style={{ width: '100%' }}>
-                <div className="cd-number">This auction has ended</div>
+                <div className="cd-number">Этот аукцион завершен</div>
               </Row>
             ) : (
               <Row style={{ width: '100%', flexWrap: 'nowrap' }}>
@@ -175,7 +175,7 @@ const LabeledCountdown = ({ state }: { state?: CountdownState }) => {
                       {state.days}
                       <span style={{ opacity: 0.5 }}>:</span>
                     </div>
-                    <div className="cd-label">days</div>
+                    <div className="cd-label">дни</div>
                   </Col>
                 )}
                 <Col>
@@ -183,7 +183,7 @@ const LabeledCountdown = ({ state }: { state?: CountdownState }) => {
                     {state.hours}
                     <span style={{ opacity: 0.5 }}>:</span>
                   </div>
-                  <div className="cd-label">hour</div>
+                  <div className="cd-label">часы</div>
                 </Col>
                 <Col>
                   <div className="cd-number">
@@ -192,12 +192,12 @@ const LabeledCountdown = ({ state }: { state?: CountdownState }) => {
                       <span style={{ opacity: 0.5 }}>:</span>
                     )}
                   </div>
-                  <div className="cd-label">mins</div>
+                  <div className="cd-label">минуты</div>
                 </Col>
                 {!state.days && (
                   <Col>
                     <div className="cd-number">{state.seconds}</div>
-                    <div className="cd-label">secs</div>
+                    <div className="cd-label">секунды</div>
                   </Col>
                 )}
               </Row>

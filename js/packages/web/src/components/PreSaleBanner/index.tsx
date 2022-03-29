@@ -50,7 +50,7 @@ export const PreSaleBanner = ({ auction }: IPreSaleBanner) => {
                     className="action-btn"
                     style={{ maxWidth: 290 }}
                   >
-                    Go to auction
+                    Перейти к аукциону
                   </Button>
                 </Link>
               </>

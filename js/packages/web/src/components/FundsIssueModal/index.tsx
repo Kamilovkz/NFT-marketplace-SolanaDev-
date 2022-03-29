@@ -24,7 +24,7 @@ export const FundsIssueModal = (props: {
       className={'fundsissue'}
       closeIcon={<img src={'/modals/close.svg'} />}
     >
-      <b className={'issue-title'}>Insufficient funds</b>
+      <b className={'issue-title'}>Недостаточно средств</b>
       <div className="card-bid-info">
         <AmountLabel
           containerStyle={{ flexDirection: 'row' }}
@@ -48,10 +48,10 @@ export const FundsIssueModal = (props: {
       </div>
       <hr />
       <span className={'issue-desc'}>
-        Deposit the minimum amount of SOL and try again.
+        Внесите минимальную сумму SOL и повторите попытку.
       </span>
       <Button className={'secondary-btn width-100'} onClick={props.onClose}>
-        Dismiss
+        Отклонить
       </Button>
     </MetaplexModal>
   );

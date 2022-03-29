@@ -22,7 +22,7 @@ const TransactionErrorModal = ({
       </div>
       <h4>Transaction error</h4>
       <div className="error-text">
-        Your transaction was not completed for{' '}
+        Ваша транзакция не допустима для{' '}
         {error ? error : 'an unknown reason. Please try again.'}
       </div>
       <Button onClick={onDismiss}>Dismiss</Button>

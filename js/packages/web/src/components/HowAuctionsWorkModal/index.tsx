@@ -16,18 +16,18 @@ export const HowAuctionsWorkModal: React.FC<HowAuctionsWorkModalProps> = ({
       modalTitle="How Auctions Work"
       cardProps={[
         {
-          title: 'Placing a Bid',
-          description: `Once you find an NFT you’d like to own, place a bid on the auction page. Keep in mind the amount of SOL you bid will be locked in your wallet for the remainder of the auction.`,
+          title: 'Размещение тендера',
+          description: `Как только вы найдете NFT, которым хотели бы владеть, сделайте ставку на странице аукциона. Имейте в виду, что сумма SOL, которую вы поставили, будет заблокирована в вашем кошельке до конца аукциона..`,
           imgSrc: '/modals/how-auctions-work-1.jpg',
         },
         {
-          title: 'Winning an Auction',
-          description: `Keep an eye on the auctions page (and your notifications) to know when you’ve been outbid, and how the sale is progressing.`,
+          title: 'Победа в аукционе',
+          description: `Следите за страницей аукциона (и своими уведомлениями), чтобы знать, когда вас перебили, и как продвигается продажа..`,
           imgSrc: '/modals/how-auctions-work-2.jpg',
         },
         {
-          title: 'Redeeming your NFT',
-          description: `If you’re lucky enough to win your NFT auction, you’ll have to redeem it to add it to your wallet. This can be done from the auction, winning notification, or your profile on ${LABELS.STORE_NAME}.`,
+          title: 'Погашение вашего НФТ',
+          description: `Если вам посчастливилось выиграть аукцион NFT, вы должны будете выкупить его, чтобы пополнить свой кошелек. Это можно сделать на аукционе, в уведомлении о выигрыше или в своем профиле на сайте ${LABELS.STORE_NAME}.`,
           imgSrc: '/modals/how-auctions-work-3.jpg',
         },
       ]}

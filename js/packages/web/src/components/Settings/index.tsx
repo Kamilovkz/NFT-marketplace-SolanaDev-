@@ -13,7 +13,7 @@ export const Settings = () => {
   return (
     <>
       <div style={{ display: 'grid' }}>
-        Network:{' '}
+        Сеть:{' '}
         <Select
           onSelect={network => {
             // Reload the page, forward user selection to the URL querystring.
@@ -47,7 +47,7 @@ export const Settings = () => {
         </Select>
         {connected && (
           <Button type="primary" onClick={disconnect}>
-            Disconnect
+            Отключиться
           </Button>
         )}
       </div>

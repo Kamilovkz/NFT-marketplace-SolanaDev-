@@ -68,7 +68,11 @@ export const ClickToCopy = ({
   };
 
   return (
-    <div className={className} onClick={onClick} title="Click to copy pubkey">
+    <div
+      className={className}
+      onClick={onClick}
+      title="Нажмите для копирования данных"
+    >
       {clicked ? <Checkmark /> : <CopyIcon />}
     </div>
   );

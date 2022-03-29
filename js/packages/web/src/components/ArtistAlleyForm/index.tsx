@@ -20,17 +20,17 @@ export const ArtistAlleyForm = () => {
         Submit your original artwork to be featured by Todd MacFarlane
       </div>
       <Form layout="vertical" onFinish={onFinish} className="artist-alley-form">
-        <Form.Item name="name" label="Your Name">
-          <Input placeholder="Enter your name" className="input-content" />
+        <Form.Item name="name" label="Ваше имя">
+          <Input placeholder="Введите ваше имя" className="input-content" />
         </Form.Item>
 
         <Form.Item
           name="email"
-          label="Your Email Address"
+          label="Ваш Email адрес"
           rules={[
             {
               type: 'email',
-              message: 'This is not a valid email',
+              message: 'Недопустимый email',
             },
           ]}
         >
@@ -39,12 +39,12 @@ export const ArtistAlleyForm = () => {
 
         <Form.Item name="url" label="Link to your portfolio">
           <Input
-            placeholder="Enter a link to your portfolio"
+            placeholder="Введите ссылку на ваше портфолио"
             className="input-content"
           />
         </Form.Item>
 
-        <Form.Item label="Upload artwork (optional)">
+        <Form.Item label="Загрузить арт (выборочно)">
           <Form.Item
             name="dragger"
             valuePropName="fileList"
@@ -56,17 +56,15 @@ export const ArtistAlleyForm = () => {
               action="/upload.do"
               className="dragger"
             >
-              <p className="ant-upload-text">Upload files here</p>
-              <p className="ant-upload-hint">
-                Drag and drop, or click to browse
-              </p>
+              <p className="ant-upload-text">Загрузить файлы здесь</p>
+              <p className="ant-upload-hint">Нажмите, чтобы загрузить</p>
             </Upload.Dragger>
           </Form.Item>
         </Form.Item>
 
         <Form.Item
           name="message"
-          label="Anything else to add?"
+          label="Есть еще что добавить?"
           rules={[
             {
               pattern: /^[a-zA-Z_0-9]{0,50}$/,
